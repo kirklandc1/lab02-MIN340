@@ -1,0 +1,182 @@
+<html>
+    <head>
+        Courtney's MIN340 Pokemon Go! Personality Test
+    </head>
+    
+    
+    
+    
+    
+    <style>
+        
+        #hello {
+            width: 10px;
+            height: 100px;
+            background-color:white;
+            
+        }
+        
+        
+        
+        #myQuestion {
+            display: none;
+        }
+        
+        }
+        
+    </style>
+    
+    
+    
+    
+    
+    
+    
+    
+    <body>
+       
+        
+    <div id="hello">    </div>
+    
+        <input id = "myInput" type = "text" placeholder="enter your name" />
+        
+        <button id="button1"> Enter </button>
+    
+        
+        <div id ="question1"> How do you travel when using "Pokemon Go!"? Have you ever wondered why sometimes you just feel like walking, but need to get miles to hatch your eggs; whereas other days you feel like driving...Which may not be the best option. Click the button below to figure out what your "Pokemon Go!" personality type is! <br> </div>
+        
+        
+        <button id="button2"> Count me in! </button> 
+        
+        
+       
+        <div id="question2"> How do you travel when using Pokemon Go? </div>
+                
+        <button id="option1"> Walk </button>
+        <button id="option2"> Jog </button>
+        <button id="option3"> Bike </button>
+        <button id="option4"> Driving </button>
+                
+                
+        <p id="paragraph1"> You are not an extreme Pokemon fan, but if you do see that one Pokemon you like, you will catch it.</p>
+        <p id="paragraph2">You love to exercise, but also want to explore and have a strong desire to catch all of the Pokemon</p>
+        <p id="paragraph3"> You enjoy exploring and the exhilarating buzz of catching Pokemon on the fly! You really want to catch them all!</p>
+        <p id="paragraph4">You are very lazy and have a death wish! Turn off Pokemon Go and continue driving safely. </p>
+        
+       
+        </body>
+    
+    
+    <script>
+    
+        var myhello = document.querySelector("#hello");
+        var myInput = document.querySelector("#myInput");
+        var myButton1 = document.querySelector("#button1");
+        var myparagraph1 = document.querySelector("#paragraph1")
+        var myparagraph2 = document.querySelector("#paragraph2")
+        var myparagraph3 = document.querySelector("#paragraph3")
+        var myparagraph4 = document.querySelector("#paragraph4")
+       
+        myButton1.addEventListener("click", clickHandler1, false);
+        myparagraph1.style.display = "none";
+        myparagraph2.style.display = "none"; 
+        myparagraph3.style.display = "none"; 
+        myparagraph4.style.display = "none"; 
+        
+        function clickHandler1() {
+        myhello.innerHTML = "Hello" + " " + myInput.value + "!";
+        myButton1.removeEventListener("click", clickHandler1, false);
+        myQuestion.style.display = "none";
+       
+            
+            }
+        
+        var mybutton2 = document.querySelector("#button2");
+        mybutton2.addEventListener("click", clickHandler2, false);
+        
+        function clickHandler2(){
+        mybutton2.removeEventListener("click", clickHandler2, false);
+        mybutton2.style.display = "none";
+            }
+        
+        
+        
+        
+        
+        
+        
+          var myoption1 = document.querySelector("#option1");
+        myoption1.addEventListener("click", clickHandler4, false);
+        
+        function clickHandler4(){
+            
+            
+        myoption1.removeEventListener("click", clickHandler4, false);
+        
+        myoption1.style.display = "none";
+        myparagraph1.style.display = "block";
+        myparagraph2.style.display = "none"; 
+        myparagraph3.style.display = "none"; 
+        myparagraph4.style.display = "none"; 
+             
+            
+            
+            }
+        
+        
+        
+        
+          var myoption2 = document.querySelector("#option2");
+        myoption2.addEventListener("click", clickHandler5, false);
+        
+        function clickHandler5(){
+        myoption2.removeEventListener("click", clickHandler5, false);
+        myoption2.style.display = "none";
+            myparagraph1.style.display = "none";
+            myparagraph2.style.display = "block"; 
+        myparagraph3.style.display = "none"; 
+        myparagraph4.style.display = "none"; 
+            
+            }
+        
+        
+        
+        
+         var myoption3 = document.querySelector("#option3");
+        myoption3.addEventListener("click", clickHandler6, false);
+        
+        function clickHandler6(){
+        myoption3.removeEventListener("click", clickHandler6, false);
+        myoption3.style.display = "none";
+            myparagraph1.style.display = "none";
+            myparagraph2.style.display = "none"; 
+        myparagraph3.style.display = "block"; 
+        myparagraph4.style.display = "none"; 
+            
+            }
+        
+        
+        
+        var myoption4 = document.querySelector("#option4");
+        myoption4.addEventListener("click", clickHandler7, false);
+        
+        function clickHandler7(){
+        myoption4.removeEventListener("click", clickHandler7, false);
+        myoption4.style.display = "none";
+            myparagraph1.style.display = "none";
+            myparagraph2.style.display = "none"; 
+        myparagraph3.style.display = "block"; 
+        myparagraph4.style.display = "none"; 
+            
+            }
+          
+        
+   
+        
+
+ 
+    
+    </script>
+    
+    
+</html>
